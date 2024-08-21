@@ -1,0 +1,102 @@
+body{
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding : 0px ;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+.navbar > img{
+        height: 24px;
+        width: 83px;
+        margin-left: 20px;
+}
+
+/* Hero */
+.content{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.content > img{
+  height: 300px ;
+  width: 500px;
+  align-self: center;
+}
+.content h1{
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.content p{
+   margin: 0px;
+}
+
+/* Card */
+.card{
+  min-height: 500px;
+  margin: 20px;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  position: relative;
+}
+.image{
+  border-radius: 10px;
+  height: 350px;
+  width: 240px;
+  position: relative;
+}
+.sale{
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  color: #222222;
+}
+.ratings{
+  display: flex;
+  font-size: 12px;
+  margin-top: 10px ;
+  letter-spacing: 1px;
+}
+.star{
+  align-items: center;
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+}
+.greys{
+  color: grey;
+}
+.title{
+  color: #222222;
+  font-size: 15px;
+  margin: 5px 0px;
+}
+.price{
+  margin: 0px;
+  font-weight: bolder;
+}
+.price span{
+  font-weight: 100;
+}
+
+@media (max-width : 700px ){
+  .card{
+    flex-wrap: wrap;
+  }
+
+}
